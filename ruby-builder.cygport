@@ -1,9 +1,15 @@
 inherit rubygem
 
 NAME="ruby-builder"
-VERSION=3.0.4
+VERSION=3.2.2
 RELEASE=1
 CATEGORY="Ruby"
 SUMMARY="Ruby builder extension"
 DESCRIPTION="Builder provides a number of builder objects that make creating
 structured data simple to do."
+
+ARCH=noarch
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_builder_CONTENTS=${RUBYGEM_INSTDIR#/}" "${RUBYGEM_SPEC#/}
+ruby_builder_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
