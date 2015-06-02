@@ -1,7 +1,7 @@
 inherit rubygem
 
 NAME="ruby-builder"
-VERSION=3.1.4
+VERSION=3.2.2
 RELEASE=1
 CATEGORY="Ruby"
 SUMMARY="Ruby builder extension"
